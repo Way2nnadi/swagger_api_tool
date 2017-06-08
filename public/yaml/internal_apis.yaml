@@ -1,0 +1,25 @@
+swagger: "2.0"
+info:
+  version: "2.0"
+  title: "Testing Swagger"
+host: localhost:3000
+basePath: /
+schemes:
+  - http
+consumes:
+  - application/json
+  - application/xml
+produces:
+  - application/json
+  - application/xml
+paths:
+  /test:
+    get:
+      tags:
+      - "test"
+      description: "Not a real endpoint"
+      responses:
+        200:
+          description: "OK"
+        401:
+          description: "Session not found"
